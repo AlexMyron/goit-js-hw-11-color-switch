@@ -25,7 +25,7 @@ const randomIntegerFromInterval = (min, max) => {
 
 function colorSwitch() {
   refs.bodyEl.style.backgroundColor =
-    colors[randomIntegerFromInterval(1, colors.length)];
+    colors[randomIntegerFromInterval(1, colors.length - 1)];
 }
 
 function onClickIntervalStart() {
