@@ -1,17 +1,5 @@
-const colors = [
-  '#FFFFFF',
-  '#2196F3',
-  '#4CAF50',
-  '#FF9800',
-  '#009688',
-  '#795548',
-];
-
-const refs = {
-  startBtn: document.querySelector('button[data-action = "start"]'),
-  stopBtn: document.querySelector('button[data-action = "stop"]'),
-  bodyEl: document.querySelector('body'),
-};
+import colors from './colors.js';
+import refs from './get-refs.js';
 
 refs.startBtn.addEventListener('click', onClickIntervalStart);
 refs.stopBtn.addEventListener('click', onClickIntervalStop);
